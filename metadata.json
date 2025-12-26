@@ -1,0 +1,8 @@
+{
+  "name": "KidAI English Teacher",
+  "description": "An interactive English learning app for children that turns teacher's notes into an AI-powered conversational tutor using Gemini Live API.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

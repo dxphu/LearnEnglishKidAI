@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  kid-ai-teacher:
+    image: node:20-alpine
+    container_name: kid_ai_teacher
+    restart: always
+    ports:
+      - "50000:50000"
+    environment:
+      # Thay thế bằng mã API Gemini của bạn
+      - API_KEY=AIzaSyCzk9WrtTRQe1xsffRMk68ytP6EsrFdfPo
+    volumes:
+      - .:/app
+    working_dir: /app
+    # Sử dụng npx serve để chạy ứng dụng web tĩnh trên cổng 50000
+    command: npx serve -s . -p 50000
