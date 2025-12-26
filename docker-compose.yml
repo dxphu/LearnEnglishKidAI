@@ -10,7 +10,7 @@ services:
       - "50000:50000"
     environment:
       # Tên biến phải là GEMINI_API_KEY để vite.config.ts nhận diện được
-      - GEMINI_API_KEY=AIzaSyCzk9WrtTRQe1xsffRMk68ytP6EsrFdfPo
+      - GEMINI_API_KEY=AIzaSyADWfQXkQeleCdFu56oeHC3YD-xnWb2lMk
     volumes:
       - .:/app
     working_dir: /app
